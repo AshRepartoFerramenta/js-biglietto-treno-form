@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #9E0E4E;
+    padding: 50px 100px;
+    text-align: center;
+}
+ .top-section{
+    height: 200px;
+    background-color: white;
+}
+.top-form{
+    padding: 80px;
+    font-size: 20px;
+}
+
+.title{
+     height: 100px;
+ }
+
+h1{
+    font-size: 50px;
+    color: yellow;
+}
+h2{
+    font-size: 40px;    
+    color: white;
+}
