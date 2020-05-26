@@ -1,32 +1,131 @@
+/* Rseset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: #9E0E4E;
-    padding: 50px 100px;
-    text-align: center;
+/* Body */
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  background-color: #c74c4c;
 }
- .top-section{
-    height: 200px;
-    background-color: white;
+/* Prima parte Generica*/
+.wrapper_80 {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 30px;
 }
-.top-form{
-    padding: 80px;
-    font-size: 20px;
+.title {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.title{
-     height: 100px;
- }
-
-h1{
-    font-size: 50px;
-    color: yellow;
+/* Form Calcolo biglietto */
+.calcolo_biglietto,
+.tuobiglietto {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
-h2{
-    font-size: 40px;    
-    color: white;
+/* Calcolo biglietto */
+.tuobiglietto {
+  padding: 20px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+label {
+  margin-bottom: 15px;
+  color: #c74c4c;
+}
+input,
+select {
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #c74c4c;
+  cursor: pointer;
+}
+input::placeholder {
+  text-align: center;
+}
+input:focus,
+select:focus {
+  background-color: #c74c4c;
+  color: #ffffff;
+}
+input:focus::placeholder {
+  color: #ffffff;
+}
+/* Calcolo funzione attiva form */
+.btn {
+  margin: 10px;
+  padding: 7px 12px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid rgb(113, 113, 113);
+  background-color: rgba(113, 113, 113, 0.3);
+  color: #c74c4c;
+  cursor: pointer;
+}
+.btn:focus {
+  background-color: rgb(113, 113, 113);
+  color: #ffffff;
+}
+/* Dettagli Biglietti */
+.ticket_wrapper {
+  display: flex;
+}
+.dettagli {
+  width: 20%;
+  height: 140px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(74, 74, 74);
+  border: 1px solid rgb(113, 113, 113);
+}
+/* Calcolo nomi passeggeri */
+#nome-passeggero {
+  margin-top: 25px;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+/* Calcolo Tariffa */
+.tariffa {
+  width: 80%;
+  padding: 30px;
+  border-top: 1px solid rgb(113, 113, 113);
+  border-bottom: 1px solid rgb(113, 113, 113);
+}
+th {
+  padding-right: 50px;
+  font-size: 20px;
+}
+td {
+  padding-top: 20px;
+}
+/* Funzione nascondi */
+.hidden {
+  opacity: 0;
+  transition: 1s;
+}
+/* Funzione mostra */
+.show {
+  opacity: 1;
+  transition: 1s;
 }

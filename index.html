@@ -2,53 +2,72 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <title>TrenItaliaTicketsService</title>
-
     </head>
     <body>
-        <!-- Inizio Main -->
-        <main>
-            <!-- Classe wrapper -->
-            <div class="wrapper">
-                <!--Inizio sezione Primo Form  -->
-                <section class="total-form">
-                    <div class="title">
-                    <h1>Calcola il prezzo del tuo biglietto</h1>
-                    </div>
-                        <div class="top-section">
-                            <div class="top-form">
-                                <label>Nome Cognome</label>
-                                <input type="text">
-
-                                <label>Km da percorrere</label>
-                                <input type="number">
-
-                                <label>Fascia d'età</label>
-                                <select id="choice">
-                                    <option value="mag">Maggiorenne</option>
-                                    <option value="min">Minoreenne</option>
-                                    <option value="mag">over 65</option>
-                                </select>
-
-                                <button id="form-gen">Genera</button>
-                                <button id="form-ann">Annulla</button>
-                            </div>
+        <div class="wrapper_80">
+            <h1 class="title">Benvenuti nella biglietteria TreniVelociItalia</h1>
+            <h2 class="title">CALCOLA QUI IL PREZZO DEL TUO BIGLIETTO</h2>
+                <div class="calcolo_biglietto">
+                    <div class="row">
+                        <div class="col">
+                            <label for="nome-utente">Inserisci il tuo nome</label>
+                            <input id="nome-utente" type="text" name="" value="" placeholder="inserisci il tuo nome">
                         </div>
-                </section>
-                <!--Fine sezione Primo Form  -->
-                <section id="biglietto" class="middle-form">
-                    <h2>Il tuo biglietto</h2>
+                        <div class="col">
+                            <label for="km">Km da Percorrere</label>
+                            <input id="km" type="number" name="" value="" placeholder="km da percorrere">
+                        </div>
+                        <div class="col">
+                            <label for="fascia-età">Fascia di età</label>
+                            <select id="fascia-età" class="" name="">
+                                <option value=""></option>
+                                <option value="minorenne">Tra 0 e 18</option>
+                                <option value="maggiorenne">Tra 18 e 65</option>
+                                <option value="over65">Over 65</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button id="genera" class="btn">GENERA</button>
+                        <button id="annulla" class="btn">ANNULLA</button>
+                    </div>
+                </div>
 
+                <h2 class="title">IL TUO BIGLIETTO</h2>
 
-
-
-                </section>
+                <div id="ticket" class="tuobiglietto hidden">
+                    <h3>DETTAGLIO PASSEGGERO</h3>
+                <div class="ticket_wrapper">
+                    <div class="dettagli">
+                        <h3>NOME PASSEGGERO</h3>
+                        <h3 id="nome-passeggero"></h3>
+                    </div>
+                    <div class="tariffa">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th >Offerta</th>
+                                    <th >Carrozza</th>
+                                    <th >Codice CP</th>
+                                    <th >Costo Biglietto</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="offerta"></td>
+                                    <td id="carrozza"></td>
+                                    <td id="codice-cp"></td>
+                                    <td id="prezzo"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
-        </main>
-        <!-- Fine Main -->
-
-
-        <script scr="js/script.js"></script>
+        </div>
+        <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>
